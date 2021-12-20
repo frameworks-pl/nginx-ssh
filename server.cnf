@@ -1,0 +1,23 @@
+[ CA_default ]
+  Policy = policy_match
+[ policy_match ]
+  countryName  = match
+  stateOrProvinceName	= match
+  organizationName	= match
+  organizationalUnitName  = optional
+  commonName  = supplied
+  emailAddress  = optional
+[req]
+  distinguished_name = req_distinguished_name
+  req_extensions = v3_req
+  prompt = no
+[req_distinguished_name]
+  C = PL
+  ST = SL
+  L = DG
+  O = Frameworks
+  OU = Frameworks
+  CN = localhost
+[v3_req]
+  basicConstraints = CA:false
+  keyUsage = critical, nonRepudiation, digitalSignature,keyEncipherment
