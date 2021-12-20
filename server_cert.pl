@@ -6,6 +6,9 @@
 
 `openssl x509 -req -days 365 -in server.csr -signkey server.key -passin file:'pass.txt' -out server.crt`;
 
+`cp server.crt /etc/nginx/ssl/server.crt`;
+`cp server.key /etc/nginx/ssl/server.key`;
+
 
 
 
