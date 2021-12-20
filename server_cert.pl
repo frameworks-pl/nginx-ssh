@@ -9,6 +9,9 @@
 `cp server.crt /etc/nginx/ssl/server.crt`;
 `cp server.key /etc/nginx/ssl/server.key`;
 
+`cp nginx_ssh_config /etc/nginx/sites-available`;
+`cd /etc/nginx/sites-enabled && ln -s ../sites-available/nginx_ssh_config nginx_ssh_config`;
+
 
 
 
